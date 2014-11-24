@@ -1,0 +1,22 @@
+﻿{
+    "name"             : "巧多数据助手\n抓取当前浏览页面内容到巧多后台"
+  , "manifest_version" : 2
+  , "version"          : "1.0"
+  , "description"      : "巧多数据助手\n抓取当前浏览页面内容到巧多后台"
+  , "background"       : { 
+      "scripts" : [
+          "jquery.js" , "background.js" 
+      ] 
+      , "persistent": false
+  }
+  , "page_action"   : { 
+      "default_icon"  : {
+          "19"  :  "qiaodoor_19_19.png"
+        , "38"  :  "qiaodoor_38_38.png"    
+    }
+    , "default_popup" : "popup.html"
+  }
+  , "permissions" : [
+      "tabs" , "activeTab" , "http://*/*","https://*/*"
+  ]  
+} 
